@@ -5,7 +5,6 @@ import "../styles/PhotoList.scss";
 
 const PhotoList = (props) => {
   
-
   const photoItems = props.PhotoData.map((photo) => {
     return <PhotoListItem 
     handleClick={props.onClick}

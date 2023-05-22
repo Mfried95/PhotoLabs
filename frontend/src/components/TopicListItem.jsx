@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/TopicListItem.scss'
 
 const TopicListItem = (props) => {
+  console.log('topic props', props.label)
   return (
     <div className="topic-list--item">
       {props.label}
