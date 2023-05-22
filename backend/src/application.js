@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const db = require('./db');
 
 const express = require("express");
 const bodyparser = require("body-parser");
@@ -16,7 +17,7 @@ function read(file) {
     fs.readFile(
       file,
       {
-        encoding: "utf-8"
+        encoding: "utf-8",
       },
       (error, data) => {
         if (error) return reject(error);
@@ -26,6 +27,7 @@ function read(file) {
   });
 }
 
+
 module.exports = function application(
   ENV,
 ) {
@@ -33,9 +35,13 @@ module.exports = function application(
   app.use(helmet());
   app.use(bodyparser.json());
 
+  const path = require('path');
+  app.use(express.static(path.join(__dirname, 'public')));
+  
   // TODO: update to topics and photos
-  app.use("/api", photos());
-  app.use("/api", topics());
+  app.use("/api", photos(db));
+  app.use("/api", topics(db));
+  console.log(ENV);
 
   if (ENV === "development" || ENV === "test") {
     Promise.all([

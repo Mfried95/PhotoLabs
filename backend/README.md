@@ -18,6 +18,7 @@ PGUSER=development
 PGDATABASE=photolabs_development
 PGPASSWORD=development
 PGPORT=5432
+
 ```
 
 ## Seeding

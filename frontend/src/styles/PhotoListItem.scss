@@ -6,6 +6,7 @@
   border-style: solid;
   border-radius: 8px;
   max-width: fit-content;
+  cursor: pointer;
 }
 
 .photo-list--image {
@@ -23,7 +24,7 @@
   object-fit: cover;
 }
 
-.photo-list--user-profile {
+.photo-list--user-profile img {
   object-fit: cover;
   border-radius: 100%;
   vertical-align: middle;
@@ -45,4 +46,15 @@
 
 .photo-list--user-location {
   color: #838383;
+}
+
+
+.modal-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 400px;
+  background-color: white;
 }

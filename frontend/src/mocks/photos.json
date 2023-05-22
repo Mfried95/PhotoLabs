@@ -26,7 +26,7 @@
     "id": "QPxL2MGqfrw",
     "updated_at": "2016-07-10T11:00:01-05:00",
     "username": "exampleuser",
-    "name": "Joe Example",
+    "name": "Profile Name",
     "portfolio_url": "https://example.com/",
     "bio": "Just an everyday Joe"
   }
@@ -57,7 +57,7 @@
       "id": "QPxL2MGqfrw",
       "updated_at": "2016-07-10T11:00:01-05:00",
       "username": "exampleuser",
-      "name": "Joe Example",
+      "name": "Profile Name",
       "portfolio_url": "https://example.com/",
       "bio": "Just an everyday Joe"
     }
@@ -121,7 +121,7 @@
       "id": "QPxL2MGqfrw",
       "updated_at": "2016-07-10T11:00:01-05:00",
       "username": "exampleuser",
-      "name": "Joe Example",
+      "name": "Profile Name",
       "portfolio_url": "https://example.com/",
       "bio": "Just an everyday Joe"
     }
@@ -153,7 +153,7 @@
       "id": "QPxL2MGqfrw",
       "updated_at": "2016-07-10T11:00:01-05:00",
       "username": "exampleuser",
-      "name": "Joe Example",
+      "name": "Profile Name",
       "portfolio_url": "https://example.com/",
       "bio": "Just an everyday Joe"
     }
@@ -217,7 +217,7 @@
       "id": "QPxL2MGqfrw",
       "updated_at": "2016-07-10T11:00:01-05:00",
       "username": "exampleuser",
-      "name": "Joe Example",
+      "name": "Profile Name",
       "portfolio_url": "https://example.com/",
       "bio": "Just an everyday Joe"
     }
@@ -249,7 +249,7 @@
       "id": "QPxL2MGqfrw",
       "updated_at": "2016-07-10T11:00:01-05:00",
       "username": "exampleuser",
-      "name": "Joe Example",
+      "name": "Profile Name",
       "portfolio_url": "https://example.com/",
       "bio": "Just an everyday Joe"
     }
@@ -312,7 +312,7 @@
     "user": {
       "id": "QPxL2MGqfrw",
       "updated_at": "2016-07-10T11:00:01-05:00",
-      "username": "exampleuser",
+      "username": "Profile Name",
       "name": "Joe Example",
       "portfolio_url": "https://example.com/",
       "bio": "Just an everyday Joe"
