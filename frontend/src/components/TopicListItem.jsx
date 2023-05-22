@@ -1,19 +1,19 @@
-import React from 'react';
-import '../styles/TopicListItem.scss'
+import React, { useState } from 'react';
+import '../styles/TopicListItem.scss';
 
 const TopicListItem = (props) => {
-  console.log('topic props', props.label)
+  const [items, setItems] = useState([]);
+
   return (
-    <div className="topic-list--item">
-      {props.label}
+    <div className="topic-list--item" onClick={() => props.handleTopic(props.id)}>
+      {props.label} 
+      {items.map(item => (
+        <div key={item.id}>{item.name}</div>
+      ))}
     </div>
-  )
+  );
 }
 
-TopicListItem.defaultProps = {
-  id: 1,
-  label: 'Nature',
-  link: 'link placeholder' 
-}
+export default TopicListItem;
 
-export default TopicListItem
+
