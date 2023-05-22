@@ -1,6 +1,7 @@
 import React from "react";
 import FavIcon from "./FavIcon";
 import PhotoList from "./PhotoList";
+import "../styles/PhotoDetailsModal.scss"
 
 const PhotoDetailsModal = (props) => {
   console.log('modal props', props)
