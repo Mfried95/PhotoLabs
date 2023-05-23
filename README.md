@@ -1,7 +1,11 @@
 # react-photolabs
-The PhotoLabs project for the Web Development React course programming.
+Welcome to the PhotoLabs project! This repository contains the code for the Web Development React course.
 
 # Photolabs
+PhotoLabs is a web application that allows users to explore and interact with a collection of photos. Users can browse through different topics, view detailed information about each photo, and interact with the favorite feature.
+
+![Home Page](docs/home.png)
+![Modal](docs/modal.png)
 
 ## Setup
 
