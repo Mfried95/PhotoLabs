@@ -1,12 +1,11 @@
 import React from "react";
 import FavIcon from "./FavIcon";
 import PhotoList from "./PhotoList";
-import "../styles/PhotoDetailsModal.scss"
+import "../styles/PhotoDetailsModal.scss";
 
 const PhotoDetailsModal = (props) => {
-  console.log('modal props', props)
-
   const handleCloseModal = () => {
+    // Close the modal by calling the onClose prop from the parent component
     props.onClose();
   };
 
@@ -20,12 +19,11 @@ const PhotoDetailsModal = (props) => {
           >
             X
           </button>
-          
         </div>
-        <h2 className="photo-list--user-details">
-          {props.photo.user.name}
-        </h2>
-        <div className='icon-div'><FavIcon setLikes={props.setLikes} /></div>
+        <h2 className="photo-list--user-details">{props.photo.user.name}</h2>
+        <div className="icon-div">
+          <FavIcon setLikes={props.setLikes} />
+        </div>
         <img
           className="photo-details-modal--image"
           src={props.photo.urls.regular}
@@ -39,6 +37,5 @@ const PhotoDetailsModal = (props) => {
     </div>
   );
 };
-
 
 export default PhotoDetailsModal;

@@ -1,20 +1,19 @@
-import React, { useEffect, useState } from 'react';
-import TopicList from './TopicList';
-import FavIcon from './FavIcon';
-import '../styles/TopNavigationBar.scss';
+import React, { useEffect } from "react";
+import TopicList from "./TopicList";
+import FavIcon from "./FavIcon";
+import "../styles/TopNavigationBar.scss";
 
 const TopNavigation = (props) => {
   useEffect(() => {
     const fetchData = () => {
-      
-      fetch('http://localhost:8001/api/topics')
+      // Fetch topics data from the API
+      fetch("http://localhost:8001/api/topics")
         .then((response) => response.json())
         .then((data) => {
-          props.setTopicData(data); // Corrected variable name
-          
+          props.setTopicData(data); // Update the topic data in the parent component
         })
         .catch((error) => {
-          console.error('Error fetching topics:', error);
+          console.error("Error fetching topics:", error);
         });
     };
 
